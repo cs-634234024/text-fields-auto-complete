@@ -1,0 +1,51 @@
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.standard:focus {
+  outline: auto;
+  outline-color: #1567eb;
+}
+
+.filled:focus {
+  outline: none;
+}
+
+.filled:hover{
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.filled {
+  position: relative;
+}
+
+.filled:focus::placeholder {
+  position: absolute;
+  top: 10%;
+  color: #1567eb ;
+  font-size: small;
+  font-weight: bold;
+}
+
+.outlined:focus{
+  outline: none;
+}
+
+
+.outlined {
+  position: relative;
+}
+
+.outlined:focus::placeholder {
+  position: absolute;
+  top: 10%;
+  color: #1567eb ;
+  font-size: small;
+  font-weight: bold;
+}
